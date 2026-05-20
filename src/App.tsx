@@ -1,9 +1,12 @@
+import EquipeSection from "./sections/equipeSection"
 
 
 function App() {
 
   return (
-    <p>Hello World</p>
+    <>
+    <EquipeSection/>
+    </>
   )
 }
 
