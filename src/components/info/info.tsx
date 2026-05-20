@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './info.css';
 import Contact from './Contact';
 
