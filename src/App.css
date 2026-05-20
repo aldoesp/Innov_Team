@@ -1,0 +1,232 @@
+.team-section {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 48px 24px;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.team-section.dark {
+  /* background: #151819; */
+  background: #2e3441;
+  color: #f3f4f6;
+}
+
+.team-section.light {
+  background: #ffffff;
+  color: #212730;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  min-width: 132px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+}
+
+.dark .theme-toggle:hover {
+  background: #f8fafc;
+  color: #151819;
+}
+
+.light .theme-toggle:hover {
+  background: #172033;
+  color: #f8fafc;
+}
+
+.team-content {
+  width: min(760px, 100%);
+  text-align: center;
+}
+
+.team-icon {
+  width: 52px;
+  height: 48px;
+  position: relative;
+  margin: 0 auto 84px;
+}
+
+.light .team-icon {
+  width: 52px;
+  height: 48px;
+  margin-bottom: 18px;
+  color: #6d4aff;
+}
+
+.team-icon span {
+  position: absolute;
+  border: 4px solid currentColor;
+  border-radius: 999px;
+}
+
+.team-icon span:nth-child(1) {
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 15px;
+  background: currentColor;
+}
+
+.team-icon span:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  right: 7px;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.team-icon span:nth-child(3) {
+  width: 38px;
+  height: 18px;
+  left: 7px;
+  bottom: 0;
+  border-bottom: 0;
+  border-radius: 18px 18px 0 0;
+}
+
+.team-content h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.light .team-content h1 {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0 0 10px;
+  overflow: visible;
+  clip: auto;
+  color: #6d4aff;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.team-content p {
+  margin: 0 auto;
+  max-width: 760px;
+  color: color-mix(in srgb, currentColor 68%, transparent);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.light .team-content p {
+  color: #475569;
+}
+
+.team-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  border-radius: 999px;
+  padding: 0 18px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tag.blue {
+  background: rgba(37, 99, 235, 0.1);
+  color: #3b82f6;
+}
+
+.tag.violet {
+  background: rgba(124, 58, 237, 0.1);
+  color: #a855f7;
+}
+
+.tag.green {
+  background: rgba(5, 150, 105, 0.22);
+  color: #86efac;
+}
+
+.light .tag.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.light .tag.violet {
+  background: #f3e8ff;
+  color: #7e22ce;
+}
+
+.light .tag.green {
+  background: #dcfce7;
+  color: #047857;
+}
+
+@media (max-width: 640px) {
+  .team-section {
+    padding: 96px 20px 48px;
+  }
+
+  .theme-toggle {
+    top: 18px;
+    right: 18px;
+    min-width: 120px;
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+
+  .team-icon {
+    margin-bottom: 52px;
+  }
+
+  .light .team-icon {
+    width: 52px;
+    height: 48px;
+    margin-bottom: 18px;
+  }
+
+  .light .team-content h1 {
+    font-size: 36px;
+  }
+
+  .team-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .team-tags {
+    gap: 10px;
+  }
+
+  .tag {
+    min-height: 36px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+}
