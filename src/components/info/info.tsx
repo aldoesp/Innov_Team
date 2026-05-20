@@ -1,6 +1,6 @@
 import React from 'react';
 import './info.css';
-import Contact from './contact';
+import Contact from './Contact';
 
 // Définition de l'interface pour un membre de l'équipe
 interface TeamMember {
