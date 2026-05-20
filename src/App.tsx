@@ -1,12 +1,15 @@
 import EquipeSection from "./sections/equipeSection"
 
+import Info from './components/info/info';
+import './App.css';
 
 function App() {
-
   return (
-    <>
-    <EquipeSection/>
-    </>
+
+    <div className="app-container">
+      <Info />
+    </div>
+
   )
 }
 
