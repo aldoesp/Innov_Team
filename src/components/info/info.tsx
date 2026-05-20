@@ -1,5 +1,6 @@
 import React from 'react';
 import './info.css';
+import Contact from './contact';
 
 // Définition de l'interface pour un membre de l'équipe
 interface TeamMember {
@@ -94,6 +95,9 @@ const Info: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className='my-15 flex justify-center items-center'>
+        <Contact/>
       </div>
     </section>
   );
