@@ -1,9 +1,12 @@
 
+import Info from './components/info/info';
+import './App.css';
 
 function App() {
-
   return (
-    <p>Hello World</p>
+    <div className="app-container">
+      <Info />
+    </div>
   )
 }
 
