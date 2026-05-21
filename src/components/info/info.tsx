@@ -49,7 +49,7 @@ const teamMembers: TeamMember[] = [
     description: "Passionné par l'automatisation et l'architecture des infrastructures, je m'occupe de la mise en ligne de nos applications, de la sécurité des serveurs et de la gestion de notre réseau. Mon but est de garantir un environnement stable, rapide et disponible pour l'ensemble du collectif.",
     email: "arshamirahjh@gmail.com",
     linkedin: "Jess Houssen",
-    imageUrl: "../public/assets/image3.jpg"
+    imageUrl: "../public/assets/Jess.png"
   }
 ];
 
