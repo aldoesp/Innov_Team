@@ -21,7 +21,10 @@ function EquipeInnovation({ theme, setTheme }: EquipeInnovationProps) {
         onClick={() => setTheme(isDark ? 'light' : 'dark')}
         aria-label={isDark ? 'Activer le mode clair' : 'Activer le mode sombre'}
       >
-        {isDark ? 'Mode clair' : 'Mode sombre'}
+        <span
+          className={`theme-icon ${isDark ? 'sun' : 'moon'}`}
+          aria-hidden="true"
+        ></span>
       </button>
 
       {/* Section principale qui presente l'equipe. */}

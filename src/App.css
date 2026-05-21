@@ -49,10 +49,13 @@
   position: absolute;
   top: 24px;
   right: 24px;
-  min-width: 132px;
+  width: 46px;
+  height: 46px;
+  display: inline-grid;
+  place-items: center;
   border: 1px solid currentColor;
   border-radius: 999px;
-  padding: 10px 18px;
+  padding: 0;
   background: transparent;
   color: inherit;
   font: inherit;
@@ -67,6 +70,34 @@
 
 .innovation-theme-toggle:hover {
   transform: translateY(-1px);
+}
+
+.theme-icon {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+
+/* Icone soleil affichee quand le mode sombre est actif. */
+.theme-icon.sun {
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow:
+    0 -9px 0 -6px currentColor,
+    0 9px 0 -6px currentColor,
+    9px 0 0 -6px currentColor,
+    -9px 0 0 -6px currentColor,
+    6px 6px 0 -6px currentColor,
+    -6px -6px 0 -6px currentColor,
+    6px -6px 0 -6px currentColor,
+    -6px 6px 0 -6px currentColor;
+}
+
+/* Icone lune affichee quand le mode clair est actif. */
+.theme-icon.moon {
+  border-radius: 50%;
+  box-shadow: inset -7px -2px 0 1px currentColor;
 }
 
 /* Effet au survol du bouton en mode sombre. */
@@ -242,9 +273,8 @@
   .innovation-theme-toggle {
     top: 18px;
     right: 18px;
-    min-width: 120px;
-    padding: 9px 14px;
-    font-size: 14px;
+    width: 42px;
+    height: 42px;
   }
 
   .innovation-icon {
