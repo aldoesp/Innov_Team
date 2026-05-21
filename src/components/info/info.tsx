@@ -22,7 +22,7 @@ const teamMembers: TeamMember[] = [
     description: "Passionnée par la gestion de projets innovants, Sophie coordonne l'équipe avec expertise et bienveillance. Elle possède 8 ans d'expérience dans le secteur.",
     email: "sophie.martin@exemple.fr",
     linkedin: "Profil LinkedIn",
-    imageUrl: "../public/image0.jpeg" // Remplacer par le chemin de la vraie image
+    imageUrl: "../public/assets/image0.jpeg" // Remplacer par le chemin de la vraie image
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const teamMembers: TeamMember[] = [
     description: "Expert en développement web et mobile, Thomas transforme les idées en applications fonctionnelles. Il maîtrise React, Node.js et les technologies cloud.",
     email: "thomas.dubois@exemple.fr",
     linkedin: "Profil LinkedIn",
-    imageUrl: "../public/image1.jpeg" 
+    imageUrl: "../public/assets/image1.jpeg" 
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const teamMembers: TeamMember[] = [
     description: "Créative et attentive aux détails, Emma conçoit des interfaces intuitives et élégantes. Elle place l'utilisateur au cœur de chaque décision de design.",
     email: "emma.rousseau@exemple.fr",
     linkedin: "Profil LinkedIn",
-    imageUrl: "../public/image2.png"
+    imageUrl: "../public/assets/image2.png"
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const teamMembers: TeamMember[] = [
     description: "Stratège créatif, Lucas développe des campagnes percutantes qui captent l'attention. Il excelle dans l'analyse de données et l'optimisation des performances.",
     email: "lucas.bernard@exemple.fr",
     linkedin: "Profil LinkedIn",
-    imageUrl: "../public/image3.jpg"
+    imageUrl: "../public/assets/image3.jpg"
   }
 ];
 
