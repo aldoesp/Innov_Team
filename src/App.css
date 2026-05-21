@@ -1,3 +1,22 @@
+/* Le conteneur global porte la classe du theme pour synchroniser toutes les sections. */
+.app-container {
+  --theme-transition: 0.25s ease;
+  min-height: 100vh;
+  transition:
+    background-color var(--theme-transition),
+    color var(--theme-transition);
+}
+
+.app-container.light {
+  background: #ffffff;
+  color: #212730;
+}
+
+.app-container.dark {
+  background: #2e3441;
+  color: #f3f4f6;
+}
+
 /* Conteneur principal : centre toute la section au milieu de la page. */
 .innovation-section {
   min-height: 460px;
@@ -9,8 +28,8 @@
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   transition:
-    background-color 0.25s ease,
-    color 0.25s ease;
+    background-color var(--theme-transition),
+    color var(--theme-transition);
 }
 
 /* Couleurs utilisees quand le mode sombre est actif. */
@@ -40,8 +59,9 @@
   font-weight: 600;
   cursor: pointer;
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
+    background-color var(--theme-transition),
+    color var(--theme-transition),
+    border-color var(--theme-transition),
     transform 0.2s ease;
 }
 
@@ -73,6 +93,7 @@
   height: 48px;
   position: relative;
   margin: 0 auto 18px;
+  transition: color var(--theme-transition);
 }
 
 .dark .innovation-icon {
@@ -124,6 +145,7 @@
   font-size: 48px;
   font-weight: 400;
   line-height: 1.12;
+  transition: color var(--theme-transition);
 }
 
 /* Couleur du titre en mode sombre. */
@@ -142,6 +164,7 @@
   max-width: 760px;
   font-size: 18px;
   line-height: 1.65;
+  transition: color var(--theme-transition);
 }
 
 /* Couleur du paragraphe en mode sombre. */
@@ -172,6 +195,9 @@
   padding: 0 18px;
   font-size: 16px;
   font-weight: 500;
+  transition:
+    background-color var(--theme-transition),
+    color var(--theme-transition);
 }
 
 /* Couleurs des badges en mode sombre. */
@@ -243,4 +269,147 @@
     padding: 0 14px;
     font-size: 14px;
   }
+}
+
+/* Adaptation de la section Info au mode clair/sombre global. */
+.app-container .team-section {
+  transition:
+    background-color var(--theme-transition),
+    color var(--theme-transition);
+}
+
+.app-container .team-header h2,
+.app-container .team-header p,
+.app-container .card-name,
+.app-container .card-role,
+.app-container .card-description,
+.app-container .contact-item,
+.app-container .contact-icon,
+.app-container .linkedin-link,
+.app-container .contact-cta,
+.app-container .contact-cta p {
+  transition:
+    background-color var(--theme-transition),
+    border-color var(--theme-transition),
+    color var(--theme-transition);
+}
+
+.app-container .team-card {
+  transition:
+    background-color var(--theme-transition),
+    border-color var(--theme-transition),
+    box-shadow var(--theme-transition),
+    transform 0.2s ease;
+}
+
+.app-container .card-divider,
+.app-container .card-image {
+  transition:
+    background-color var(--theme-transition),
+    border-color var(--theme-transition);
+}
+
+.app-container.light .team-section {
+  background-color: #f8fafc;
+  color: #111827;
+}
+
+.app-container.dark .team-section {
+  background-color: #2e3441;
+  color: #f8fafc;
+}
+
+.app-container.light .team-header h2,
+.app-container.light .card-name {
+  color: #111827;
+}
+
+.app-container.dark .team-header h2,
+.app-container.dark .card-name {
+  color: #f8fafc;
+}
+
+.app-container.light .team-header p,
+.app-container.light .card-description,
+.app-container.light .contact-item,
+.app-container.light .linkedin-link {
+  color: #64748b;
+}
+
+.app-container.dark .team-header p,
+.app-container.dark .card-description,
+.app-container.dark .contact-item,
+.app-container.dark .linkedin-link {
+  color: #d7dce4;
+}
+
+.app-container.light .team-card {
+  background-color: #ffffff;
+  border-color: #f1f5f9;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.app-container.dark .team-card {
+  background-color: #3a4251;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.18),
+    0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.app-container.dark .team-card:hover {
+  box-shadow:
+    0 18px 34px rgba(0, 0, 0, 0.24),
+    0 8px 12px rgba(0, 0, 0, 0.16);
+}
+
+.app-container.light .card-role {
+  color: #2563eb;
+}
+
+.app-container.dark .card-role,
+.app-container.dark .linkedin-link:hover {
+  color: #93c5fd;
+}
+
+.app-container.light .card-divider {
+  border-top-color: #e2e8f0;
+}
+
+.app-container.dark .card-divider {
+  border-top-color: rgba(255, 255, 255, 0.14);
+}
+
+.app-container.light .contact-icon {
+  color: #94a3b8;
+}
+
+.app-container.dark .contact-icon {
+  color: #c4b5fd;
+}
+
+.app-container.light .card-image {
+  border-color: #e0f2fe;
+  background-color: #ffffff;
+}
+
+.app-container.dark .card-image {
+  border-color: rgba(147, 197, 253, 0.45);
+  background-color: #2e3441;
+}
+
+.app-container.dark .contact-cta {
+  background: linear-gradient(
+    90deg,
+    rgba(59, 130, 246, 0.16),
+    rgba(168, 85, 247, 0.16)
+  );
+  border-color: rgba(147, 197, 253, 0.45);
+  color: #f8fafc;
+}
+
+.app-container.dark .contact-cta p {
+  color: #d7dce4;
 }
