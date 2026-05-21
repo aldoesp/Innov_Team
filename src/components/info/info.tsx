@@ -22,7 +22,7 @@ const teamMembers: TeamMember[] = [
     description: "Passionné par la technologie, Rivo excelle dans le développement de solutions web robustes. Il maîtrise les frameworks modernes et est toujours à la recherche de nouvelles façons d'innover.",
     email: "rivo.andriharisoa@gmail.com",
     linkedin: "Andriharisoa Rivo",
-    imageUrl: "../public/assets/rivo.jpeg" // Remplacer par le chemin de la vraie image
+    imageUrl: "../src/image/rivo.jpeg" // Remplacer par le chemin de la vraie image
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const teamMembers: TeamMember[] = [
     description: "Expert en sécurité informatique, Aldo protège les infrastructures contre les menaces. Il a une solide expérience en administration systèmes et réseaux, avec une passion pour la cybersécurité.",
     email: "aldoesperant@gmail.com",
     linkedin: "linkedin.com/in/aldo-espérant-4609332b7",
-    imageUrl: "../public/assets/image1.jpeg" 
+    imageUrl: "../src/image/image1.jpeg" 
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const teamMembers: TeamMember[] = [
     description: "Étudiant en Informatique et développeur passionné, spécialisé dans la création d'applications web et mobiles robustes (Next.js, Flutter, Prisma). J'ai un fort intérêt pour l'administration système, la sécurité réseau et le déploiement d'infrastructures fiables.",
     email: "baptistobrunel@gmail.com",
     linkedin: "Tanjonirina Brunel RAKOTOARISOA",
-    imageUrl: "../public/assets/Tan.png"
+    imageUrl: "../src/image/Tan.png"
 },
   {
     id: 4,
@@ -49,7 +49,7 @@ const teamMembers: TeamMember[] = [
     description: "Passionné par l'automatisation et l'architecture des infrastructures, je m'occupe de la mise en ligne de nos applications, de la sécurité des serveurs et de la gestion de notre réseau. Mon but est de garantir un environnement stable, rapide et disponible pour l'ensemble du collectif.",
     email: "arshamirahjh@gmail.com",
     linkedin: "Jess Houssen",
-    imageUrl: "../public/assets/Jess.png"
+    imageUrl: "../src/image/Jess.png"
   }
 ];
 
