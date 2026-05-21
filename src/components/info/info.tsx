@@ -17,20 +17,20 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Rivo Andriharisoa",
-    role: "Développeur Full-Stack",
-    description: "Passionné par la technologie, Rivo excelle dans le développement de solutions web robustes. Il maîtrise les frameworks modernes et est toujours à la recherche de nouvelles façons d'innover.",
-    email: "rivo.andriharisoa@gmail.com",
-    linkedin: "Andriharisoa Rivo",
-    imageUrl: "../public/assets/rivo.jpeg" // Remplacer par le chemin de la vraie image
+    name: "Sophie Martin",
+    role: "Cheffe de Projet",
+    description: "Passionnée par la gestion de projets innovants, Sophie coordonne l'équipe avec expertise et bienveillance. Elle possède 8 ans d'expérience dans le secteur.",
+    email: "sophie.martin@exemple.fr",
+    linkedin: "Profil LinkedIn",
+    imageUrl: "../public/assets/image0.jpeg" // Remplacer par le chemin de la vraie image
   },
   {
     id: 2,
-    name: "RANDRIAMANALINA Haritsalama Aldo Espérant",
-    role: "Administrateur Systèmes et Réseaux . Cybersécurité",
-    description: "Expert en sécurité informatique, Aldo protège les infrastructures contre les menaces. Il a une solide expérience en administration systèmes et réseaux, avec une passion pour la cybersécurité.",
-    email: "aldoesperant@gmail.com",
-    linkedin: "inkedin.com/in/aldo-espérant-4609332b7",
+    name: "Thomas Dubois",
+    role: "Développeur Full-Stack",
+    description: "Expert en développement web et mobile, Thomas transforme les idées en applications fonctionnelles. Il maîtrise React, Node.js et les technologies cloud.",
+    email: "thomas.dubois@exemple.fr",
+    linkedin: "Profil LinkedIn",
     imageUrl: "../public/assets/image1.jpeg" 
   },
   {
@@ -44,11 +44,11 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 4,
-    name: "Lucas Bernard",
-    role: "Spécialiste Marketing Digital",
-    description: "Stratège créatif, Lucas développe des campagnes percutantes qui captent l'attention. Il excelle dans l'analyse de données et l'optimisation des performances.",
-    email: "lucas.bernard@exemple.fr",
-    linkedin: "Profil LinkedIn",
+    name: "ARSHAMIRAH Jess Houssen",
+    role: "Administateur Système et Réseau",
+    description: "Passionné par l'automatisation et l'architecture des infrastructures, je m'occupe de la mise en ligne de nos applications, de la sécurité des serveurs et de la gestion de notre réseau. Mon but est de garantir un environnement stable, rapide et disponible pour l'ensemble du collectif.",
+    email: "arshamirahjh@gmail.com",
+    linkedin: "Jess Houssen",
     imageUrl: "../public/assets/image3.jpg"
   }
 ];
