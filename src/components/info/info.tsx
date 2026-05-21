@@ -17,39 +17,39 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Sophie Martin",
-    role: "Cheffe de Projet",
-    description: "Passionnée par la gestion de projets innovants, Sophie coordonne l'équipe avec expertise et bienveillance. Elle possède 8 ans d'expérience dans le secteur.",
-    email: "sophie.martin@exemple.fr",
-    linkedin: "Profil LinkedIn",
-    imageUrl: "../public/image0.jpeg" // Remplacer par le chemin de la vraie image
+    name: "Rivo Andriharisoa",
+    role: "Développeur Full-Stack",
+    description: "Passionné par la technologie, Rivo excelle dans le développement de solutions web robustes. Il maîtrise les frameworks modernes et est toujours à la recherche de nouvelles façons d'innover.",
+    email: "rivo.andriharisoa@gmail.com",
+    linkedin: "Andriharisoa Rivo",
+    imageUrl: "../public/assets/rivo.jpeg" // Remplacer par le chemin de la vraie image
   },
   {
     id: 2,
-    name: "Thomas Dubois",
-    role: "Développeur Full-Stack",
-    description: "Expert en développement web et mobile, Thomas transforme les idées en applications fonctionnelles. Il maîtrise React, Node.js et les technologies cloud.",
-    email: "thomas.dubois@exemple.fr",
-    linkedin: "Profil LinkedIn",
-    imageUrl: "../public/image1.jpeg" 
+    name: "RANDRIAMANALINA Haritsalama Aldo Espérant",
+    role: "Administrateur Systèmes et Réseaux . Cybersécurité",
+    description: "Expert en sécurité informatique, Aldo protège les infrastructures contre les menaces. Il a une solide expérience en administration systèmes et réseaux, avec une passion pour la cybersécurité.",
+    email: "aldoesperant@gmail.com",
+    linkedin: "linkedin.com/in/aldo-espérant-4609332b7",
+    imageUrl: "../public/assets/image1.jpeg" 
   },
   {
     id: 3,
-    name: "Emma Rousseau",
-    role: "Designer UX/UI",
-    description: "Créative et attentive aux détails, Emma conçoit des interfaces intuitives et élégantes. Elle place l'utilisateur au cœur de chaque décision de design.",
-    email: "emma.rousseau@exemple.fr",
-    linkedin: "Profil LinkedIn",
-    imageUrl: "../public/image2.png"
-  },
+    name: "RAKOTOARISOA Tanjonirina Baptisto Brunel",
+    role: "Designer UX/UI & Passionné de Sécurité Réseau",
+    description: "Étudiant en Informatique et développeur passionné, spécialisé dans la création d'applications web et mobiles robustes (Next.js, Flutter, Prisma). J'ai un fort intérêt pour l'administration système, la sécurité réseau et le déploiement d'infrastructures fiables.",
+    email: "baptistobrunel@gmail.com",
+    linkedin: "Tanjonirina Brunel RAKOTOARISOA",
+    imageUrl: "../public/assets/Tan.png"
+},
   {
     id: 4,
-    name: "Lucas Bernard",
-    role: "Spécialiste Marketing Digital",
-    description: "Stratège créatif, Lucas développe des campagnes percutantes qui captent l'attention. Il excelle dans l'analyse de données et l'optimisation des performances.",
-    email: "lucas.bernard@exemple.fr",
-    linkedin: "Profil LinkedIn",
-    imageUrl: "../public/image3.jpg"
+    name: "ARSHAMIRAH Jess Houssen",
+    role: "Administateur Système et Réseau",
+    description: "Passionné par l'automatisation et l'architecture des infrastructures, je m'occupe de la mise en ligne de nos applications, de la sécurité des serveurs et de la gestion de notre réseau. Mon but est de garantir un environnement stable, rapide et disponible pour l'ensemble du collectif.",
+    email: "arshamirahjh@gmail.com",
+    linkedin: "Jess Houssen",
+    imageUrl: "../public/assets/Jess.png"
   }
 ];
 

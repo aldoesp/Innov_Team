@@ -1,0 +1,415 @@
+/* Le conteneur global porte la classe du theme pour synchroniser toutes les sections. */
+.app-container {
+  --theme-transition: 0.25s ease;
+  min-height: 100vh;
+  transition:
+    background-color var(--theme-transition),
+    color var(--theme-transition);
+}
+
+.app-container.light {
+  background: #ffffff;
+  color: #212730;
+}
+
+.app-container.dark {
+  background: #2e3441;
+  color: #f3f4f6;
+}
+
+/* Conteneur principal : centre toute la section au milieu de la page. */
+.innovation-section {
+  min-height: 460px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 64px 24px 48px;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  transition:
+    background-color var(--theme-transition),
+    color var(--theme-transition);
+}
+
+/* Couleurs utilisees quand le mode sombre est actif. */
+.innovation-section.dark {
+  background: #2e3441;
+  color: #f3f4f6;
+}
+
+/* Couleurs utilisees quand le mode clair est actif. */
+.innovation-section.light {
+  background: #ffffff;
+  color: #212730;
+}
+
+/* Bouton qui permet de changer entre mode sombre et mode clair. */
+.innovation-theme-toggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  min-width: 132px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color var(--theme-transition),
+    color var(--theme-transition),
+    border-color var(--theme-transition),
+    transform 0.2s ease;
+}
+
+.innovation-theme-toggle:hover {
+  transform: translateY(-1px);
+}
+
+/* Effet au survol du bouton en mode sombre. */
+.dark .innovation-theme-toggle:hover {
+  background: #f8fafc;
+  color: #151819;
+}
+
+/* Effet au survol du bouton en mode clair. */
+.light .innovation-theme-toggle:hover {
+  background: #172033;
+  color: #f8fafc;
+}
+
+/* Zone qui contient l'icone, le titre, le texte et les badges. */
+.innovation-content {
+  width: min(760px, 100%);
+  text-align: center;
+}
+
+/* Base de l'icone dessinee en CSS. */
+.innovation-icon {
+  width: 52px;
+  height: 48px;
+  position: relative;
+  margin: 0 auto 18px;
+  transition: color var(--theme-transition);
+}
+
+.dark .innovation-icon {
+  color: #f8fafc;
+}
+
+.light .innovation-icon {
+  color: #6d4aff;
+}
+
+/* Chaque span represente une partie de l'icone. */
+.innovation-icon span {
+  position: absolute;
+  border: 4px solid currentColor;
+  border-radius: 999px;
+}
+
+/* Premier cercle : tete principale de l'icone. */
+.innovation-icon span:nth-child(1) {
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 15px;
+  background: currentColor;
+}
+
+/* Deuxieme cercle : tete secondaire de l'icone. */
+.innovation-icon span:nth-child(2) {
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  right: 7px;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* Demi-cercle du bas : forme du groupe/personnes. */
+.innovation-icon span:nth-child(3) {
+  width: 38px;
+  height: 18px;
+  left: 7px;
+  bottom: 0;
+  border-bottom: 0;
+  border-radius: 18px 18px 0 0;
+}
+
+.innovation-content h1 {
+  margin: 0 0 10px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.12;
+  transition: color var(--theme-transition);
+}
+
+/* Couleur du titre en mode sombre. */
+.dark .innovation-content h1 {
+  color: #f8fafc;
+}
+
+/* Couleur du titre en mode clair. */
+.light .innovation-content h1 {
+  color: #6d4aff;
+}
+
+/* Paragraphe de presentation de l'equipe. */
+.innovation-content p {
+  margin: 0 auto;
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.65;
+  transition: color var(--theme-transition);
+}
+
+/* Couleur du paragraphe en mode sombre. */
+.dark .innovation-content p {
+  color: #d7dce4;
+}
+
+/* Couleur du paragraphe en mode clair. */
+.light .innovation-content p {
+  color: #475569;
+}
+
+/* Conteneur des badges de valeurs. */
+.innovation-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Style commun a tous les badges. */
+.innovation-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  border-radius: 999px;
+  padding: 0 18px;
+  font-size: 16px;
+  font-weight: 500;
+  transition:
+    background-color var(--theme-transition),
+    color var(--theme-transition);
+}
+
+/* Couleurs des badges en mode sombre. */
+.innovation-tag.blue {
+  background: rgba(59, 130, 246, 0.14);
+  color: #60a5fa;
+}
+
+.innovation-tag.violet {
+  background: rgba(168, 85, 247, 0.14);
+  color: #c084fc;
+}
+
+.innovation-tag.green {
+  background: rgba(5, 150, 105, 0.22);
+  color: #86efac;
+}
+
+/* Couleurs des badges en mode clair. */
+.light .innovation-tag.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.light .innovation-tag.violet {
+  background: #f3e8ff;
+  color: #7e22ce;
+}
+
+.light .innovation-tag.green {
+  background: #dcfce7;
+  color: #047857;
+}
+
+/* Adaptation de l'interface pour les petits ecrans. */
+@media (max-width: 640px) {
+  .innovation-section {
+    min-height: 520px;
+    padding: 96px 20px 40px;
+  }
+
+  .innovation-theme-toggle {
+    top: 18px;
+    right: 18px;
+    min-width: 120px;
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+
+  .innovation-icon {
+    margin-bottom: 18px;
+  }
+
+  .innovation-content h1 {
+    font-size: 36px;
+  }
+
+  .innovation-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .innovation-tags {
+    gap: 10px;
+  }
+
+  .innovation-tag {
+    min-height: 36px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+}
+
+/* Adaptation de la section Info au mode clair/sombre global. */
+.app-container .team-section {
+  transition:
+    background-color var(--theme-transition),
+    color var(--theme-transition);
+}
+
+.app-container .team-header h2,
+.app-container .team-header p,
+.app-container .card-name,
+.app-container .card-role,
+.app-container .card-description,
+.app-container .contact-item,
+.app-container .contact-icon,
+.app-container .linkedin-link,
+.app-container .contact-cta,
+.app-container .contact-cta p {
+  transition:
+    background-color var(--theme-transition),
+    border-color var(--theme-transition),
+    color var(--theme-transition);
+}
+
+.app-container .team-card {
+  transition:
+    background-color var(--theme-transition),
+    border-color var(--theme-transition),
+    box-shadow var(--theme-transition),
+    transform 0.2s ease;
+}
+
+.app-container .card-divider,
+.app-container .card-image {
+  transition:
+    background-color var(--theme-transition),
+    border-color var(--theme-transition);
+}
+
+.app-container.light .team-section {
+  background-color: #f8fafc;
+  color: #111827;
+}
+
+.app-container.dark .team-section {
+  background-color: #2e3441;
+  color: #f8fafc;
+}
+
+.app-container.light .team-header h2,
+.app-container.light .card-name {
+  color: #111827;
+}
+
+.app-container.dark .team-header h2,
+.app-container.dark .card-name {
+  color: #f8fafc;
+}
+
+.app-container.light .team-header p,
+.app-container.light .card-description,
+.app-container.light .contact-item,
+.app-container.light .linkedin-link {
+  color: #64748b;
+}
+
+.app-container.dark .team-header p,
+.app-container.dark .card-description,
+.app-container.dark .contact-item,
+.app-container.dark .linkedin-link {
+  color: #d7dce4;
+}
+
+.app-container.light .team-card {
+  background-color: #ffffff;
+  border-color: #f1f5f9;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.app-container.dark .team-card {
+  background-color: #3a4251;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.18),
+    0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.app-container.dark .team-card:hover {
+  box-shadow:
+    0 18px 34px rgba(0, 0, 0, 0.24),
+    0 8px 12px rgba(0, 0, 0, 0.16);
+}
+
+.app-container.light .card-role {
+  color: #2563eb;
+}
+
+.app-container.dark .card-role,
+.app-container.dark .linkedin-link:hover {
+  color: #93c5fd;
+}
+
+.app-container.light .card-divider {
+  border-top-color: #e2e8f0;
+}
+
+.app-container.dark .card-divider {
+  border-top-color: rgba(255, 255, 255, 0.14);
+}
+
+.app-container.light .contact-icon {
+  color: #94a3b8;
+}
+
+.app-container.dark .contact-icon {
+  color: #c4b5fd;
+}
+
+.app-container.light .card-image {
+  border-color: #e0f2fe;
+  background-color: #ffffff;
+}
+
+.app-container.dark .card-image {
+  border-color: rgba(147, 197, 253, 0.45);
+  background-color: #2e3441;
+}
+
+.app-container.dark .contact-cta {
+  background: linear-gradient(
+    90deg,
+    rgba(59, 130, 246, 0.16),
+    rgba(168, 85, 247, 0.16)
+  );
+  border-color: rgba(147, 197, 253, 0.45);
+  color: #f8fafc;
+}
+
+.app-container.dark .contact-cta p {
+  color: #d7dce4;
+}
