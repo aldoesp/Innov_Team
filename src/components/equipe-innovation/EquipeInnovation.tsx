@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import type { Dispatch, SetStateAction } from 'react'
 
-function EquipeInnovation() {
-  // On garde le theme actuel dans un state React pour changer l'affichage sans recharger la page.
-  const [theme, setTheme] = useState<'dark' | 'light'>('light')
+type Theme = 'dark' | 'light'
 
+interface EquipeInnovationProps {
+  theme: Theme
+  setTheme: Dispatch<SetStateAction<Theme>>
+}
+
+function EquipeInnovation({ theme, setTheme }: EquipeInnovationProps) {
   // Cette variable aide a savoir quel texte afficher dans le bouton.
   const isDark = theme === 'dark'
 
