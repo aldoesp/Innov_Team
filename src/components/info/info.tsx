@@ -37,10 +37,10 @@ const teamMembers: TeamMember[] = [
     id: 3,
     name: "RAKOTOARISOA Tanjonirina Baptisto Brunel",
     role: "Designer UX/UI & Passionné de Sécurité Réseau",
-    description: "Étudiant de niveau L3 en Informatique et développeur passionné, spécialisé dans la création d'applications web et mobiles robustes (Next.js, Flutter, Prisma). J'ai un fort intérêt pour l'administration système, la sécurité réseau et le déploiement d'infrastructures fiables. Rigoureux et habitué au travail collaboratif sur GitHub, j'aime concevoir des solutions performantes et sécurisées.",
+    description: "Étudiant en Informatique et développeur passionné, spécialisé dans la création d'applications web et mobiles robustes (Next.js, Flutter, Prisma). J'ai un fort intérêt pour l'administration système, la sécurité réseau et le déploiement d'infrastructures fiables.",
     email: "baptistobrunel@gmail.com",
     linkedin: "Tanjonirina Brunel RAKOTOARISOA",
-    imageUrl: "../public/assets/image2.png"
+    imageUrl: "../public/assets/Tan.png"
 },
   {
     id: 4,
