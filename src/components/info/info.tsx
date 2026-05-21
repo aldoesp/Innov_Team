@@ -26,11 +26,11 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 2,
-    name: "Thomas Dubois",
-    role: "Développeur Full-Stack",
-    description: "Expert en développement web et mobile, Thomas transforme les idées en applications fonctionnelles. Il maîtrise React, Node.js et les technologies cloud.",
-    email: "thomas.dubois@exemple.fr",
-    linkedin: "Profil LinkedIn",
+    name: "RANDRIAMANALINA Haritsalama Aldo Espérant",
+    role: "Administrateur Systèmes et Réseaux . Cybersécurité",
+    description: "Expert en sécurité informatique, Aldo protège les infrastructures contre les menaces. Il a une solide expérience en administration systèmes et réseaux, avec une passion pour la cybersécurité.",
+    email: "aldoesperant@gmail.com",
+    linkedin: "linkedin.com/in/aldo-espérant-4609332b7",
     imageUrl: "../public/assets/image1.jpeg" 
   },
   {
