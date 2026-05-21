@@ -17,12 +17,12 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Sophie Martin",
-    role: "Cheffe de Projet",
-    description: "Passionnée par la gestion de projets innovants, Sophie coordonne l'équipe avec expertise et bienveillance. Elle possède 8 ans d'expérience dans le secteur.",
-    email: "sophie.martin@exemple.fr",
-    linkedin: "Profil LinkedIn",
-    imageUrl: "../public/assets/image0.jpeg" // Remplacer par le chemin de la vraie image
+    name: "Rivo Andriharisoa",
+    role: "Développeur Full-Stack",
+    description: "Passionné par la technologie, Rivo excelle dans le développement de solutions web robustes. Il maîtrise les frameworks modernes et est toujours à la recherche de nouvelles façons d'innover.",
+    email: "rivo.andriharisoa@gmail.com",
+    linkedin: "Andriharisoa Rivo",
+    imageUrl: "../public/assets/rivo.jpeg" // Remplacer par le chemin de la vraie image
   },
   {
     id: 2,
